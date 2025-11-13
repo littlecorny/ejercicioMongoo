@@ -1,0 +1,47 @@
+/*
+ * 🎨 ESTILOS GLOBALES BÁSICOS
+ * 
+ * Estilos que se aplican a toda la aplicación
+ */
+
+/* 🌈 FONDO DEGRADADO */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+/* 📱 RESPONSIVE PARA MÓVILES */
+* {
+  box-sizing: border-box;
+}
+
+/* 🎯 CONTENEDOR PRINCIPAL */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* 🔄 ANIMACIÓN DE CARGA SIMPLE */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
